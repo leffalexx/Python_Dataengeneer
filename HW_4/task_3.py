@@ -58,7 +58,7 @@ def update_operation_count():
     operation_count += 1
     if operation_count % 3 == 0:
         print('Начислены проценты')
-        balance *= iNTEREST_RATE
+        balance *= INTEREST_RATE
 
 
 def print_balance():
@@ -95,7 +95,7 @@ while True:
         print_history()
 
     elif operation == '0':
-        print("До свидания!")
+        print('До свидания!')
         break
 
 print('Ваш баланс:', balance)
