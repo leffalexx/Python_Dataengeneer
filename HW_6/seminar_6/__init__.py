@@ -1,1 +1,1 @@
-__all__ = ["puzzle", "function_random", "years"]
+__all__ = ["puzzle", "function_random", "years", "chess"]
