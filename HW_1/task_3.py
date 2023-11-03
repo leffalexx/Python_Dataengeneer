@@ -2,12 +2,15 @@
 # Программа должна подсказывать “больше” или “меньше” после каждой попытки. Для генерации случайного числа используйте код:
 # from random import randintnum = randint(LOWER_LIMIT, UPPER_LIMIT)
 
+
 from random import randint
+
 
 TRY = 10
 LOWER_LIMIT = 0
 UPPER_LIMIT = 1000
 quiz = randint(LOWER_LIMIT, UPPER_LIMIT)
+
 
 print(f'Загадано число от {LOWER_LIMIT} до {UPPER_LIMIT}. У Вас есть {TRY} попыток угадать ')
 for i in range(TRY):
@@ -19,6 +22,7 @@ for i in range(TRY):
         print('Загаданное число больше')
     else:
         print('Загаданное число меньше')
+
 
 if guess != quiz:
     print(f'Вы не угадали число. Было загадано число {quiz}')

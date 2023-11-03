@@ -6,7 +6,7 @@ def get_file_info(file_path):
     name_and_ext = file_path.rsplit('/', 1)[-1]
     name, extension = name_and_ext.rsplit('.')
     path = file_path[:-(len(name_and_ext) + 1)]
-    return (path, name, extension)
+    return path, name, extension
 
 
 file_info = get_file_info('C:/Program Files/7-Zip/7Zip.dll')

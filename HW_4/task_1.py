@@ -8,6 +8,7 @@ def transpose(matrix):
 matrix = [[1, 2, 3], 
           [4, 5, 6]]
 
+
 print(matrix)
 transposed = transpose(matrix)
 print(transposed)  

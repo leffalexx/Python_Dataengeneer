@@ -1,0 +1,5 @@
+                new Book("1", "1984", "Orwell"),
+                new Book("2", "Animal Farm", "Orwell"),
+                new Book("3", "Clockwork Orange", "Burgess"),
+                new Book("4", "The Kindly Ones", "Little"),
+                new Book("5", "Brave New World", "Huxley")
