@@ -1,14 +1,13 @@
-# 1. Напишите функцию для транспонирования матрицы
+# Напишите функцию для транспонирования матрицы
 
 
-def transpose(matrix):
-    return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+def transpose(input_matrix):
+    return [[row[i] for row in input_matrix] for i in range(len(input_matrix[0]))]
 
 
-matrix = [[1, 2, 3], 
+matrix_to_transpose = [[1, 2, 3],
           [4, 5, 6]]
 
-
-print(matrix)
-transposed = transpose(matrix)
+print(matrix_to_transpose)
+transposed = transpose(matrix_to_transpose)
 print(transposed)  

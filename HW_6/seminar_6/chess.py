@@ -1,5 +1,5 @@
-board = [[0] * 8 for _ in range(8)] #доска
-queens = [(0, 0), (1, 4), (2, 7), (3, 5), (4, 2), (5, 6), (6, 1), (7, 3)]
+board = [[0] * 8 for _ in range(8)]
+mock = []
 
 
 def check_valid(queens):
@@ -34,10 +34,6 @@ def check_valid(queens):
 
 
 if __name__ == "__main__":
-    print(check_valid(queens))
+    print(check_valid(mock))
     for row in board:
         print(f'{row[0]} {row[1]} {row[2]} {row[3]} {row[4]} {row[5]} {row[6]} {row[7]}')
-
-
-# input_positions = [(0, 0), (1, 4), (2, 7), (3, 5), (4, 2), (5, 6), (6, 1), (7, 3)] Для проверки гарантированно рабочие
-

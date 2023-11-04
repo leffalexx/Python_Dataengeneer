@@ -1,4 +1,4 @@
-# 3. Возьмите задачу о банкомате из семинара 2. Разбейте её на отдельные операции — функции.
+# Возьмите задачу о банкомате из семинара 2. Разбейте её на отдельные операции — функции.
 # Дополнительно сохраняйте все операции поступления и снятия средств в список.
 # Напишите программу банкомат.
 # Начальная сумма равна нулю
@@ -17,35 +17,35 @@ from datetime import datetime
 balance = 0
 history = []
 operation_count = 0
-COMISSION = 0.015
-MIN_COMISSION = 30
-MAX_COMISSION = 600
+COMMISSION = 0.015
+MIN_COMMISSION = 30
+MAX_COMMISSION = 600
 STEP = 50
 INTEREST_RATE = 1.03
 LUXURY_LIMIT = 5000000
 TAX_RATE = 0.1
 
 
-def deposit(amount):
+def deposit(deposit_amount):
     global balance
-    balance += amount
-    history.append((datetime.now(), f'Пополнение на {amount} руб.'))
+    balance += deposit_amount
+    history.append((datetime.now(), f'Пополнение на {deposit_amount} руб.'))
     update_operation_count()
 
 
-def withdraw(amount):
+def withdraw(withdraw_amount):
     global balance
-    commission = amount * COMISSION
-    commission = max(commission, MIN_COMISSION)
-    commission = min(commission, MAX_COMISSION)
+    commission = withdraw_amount * COMMISSION
+    commission = max(commission, MIN_COMMISSION)
+    commission = min(commission, MAX_COMMISSION)
 
-    if amount + commission > balance:
+    if withdraw_amount + commission > balance:
         print('Недостаточно средств!')
         return
 
-    balance -= amount + commission
+    balance -= withdraw_amount + commission
     history.append(
-        (datetime.now(), f'Снятие {amount} руб. (комиссия {commission} руб.)'))
+        (datetime.now(), f'Снятие {withdraw_amount} руб. (комиссия {commission} руб.)'))
 
 
 def update_operation_count():

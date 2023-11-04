@@ -3,10 +3,8 @@
 # с именем в качестве ключа и суммой премии в качестве значения. Сумма рассчитывается как
 # ставка умноженная на процент премии
 
-
 names = ['Alex', 'Semyon', 'Anna']
 salary = [250000, 275000, 311000]
 bonus = ['10.25%', '9.25%', '11.5%']
-
 
 print(dict(zip(names, [int(salary * (1 + float(bonus[:-1]) / 100)) for salary, bonus in zip(salary, bonus)])))

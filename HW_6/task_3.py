@@ -1,3 +1,6 @@
+# Напишите функцию в шахматный модуль. Используйте генератор случайных чисел для случайной расстановки ферзей
+# в задаче выше. Проверяйте различный случайные варианты и выведите 4 успешных расстановки.
+
 import random
 import seminar_6.chess
 
@@ -15,6 +18,6 @@ def generate_queens():
 
 
 for i in range(4):
-    queens = generate_queens()
-    if seminar_6.chess.check_valid(queens):
-        print(queens)
+    random_queens = generate_queens()
+    if seminar_6.chess.check_valid(random_queens):
+        print(random_queens)
