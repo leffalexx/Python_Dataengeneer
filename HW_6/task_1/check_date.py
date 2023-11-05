@@ -16,3 +16,8 @@ def check_date(date_to_check):
         return True
     else:
         return False
+
+
+if __name__ == '__main__':
+    test_date = '2023-11-05'
+    print(check_date(test_date))
