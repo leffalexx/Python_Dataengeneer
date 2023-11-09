@@ -1,0 +1,44 @@
+[
+  {
+    "parent_dir": "",
+    "path": "..\\HW_8\\access_level_to_json.py",
+    "type": "file",
+    "size": 1828
+  },
+  {
+    "parent_dir": "",
+    "path": "..\\HW_8\\catalog_files.py",
+    "type": "file",
+    "size": 2089
+  },
+  {
+    "parent_dir": "",
+    "path": "..\\HW_8\\convert_to_json.py",
+    "type": "file",
+    "size": 966
+  },
+  {
+    "parent_dir": "..\\HW_8\\files",
+    "path": "..\\HW_8\\files\\file000000002.txt",
+    "type": "file",
+    "size": 42
+  },
+  {
+    "parent_dir": "..\\HW_8\\files",
+    "path": "..\\HW_8\\files\\file00000003.txt",
+    "type": "file",
+    "size": 42
+  },
+  {
+    "parent_dir": "..\\HW_8\\files",
+    "path": "..\\HW_8\\files\\file000001.txt",
+    "type": "file",
+    "size": 291
+  },
+  {
+    "parent_dir": "",
+    "path": "..\\HW_8\\__init__.py",
+    "type": "file",
+    "size": 72
+  }
+]
